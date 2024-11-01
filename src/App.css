@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+.navbar {
+  width: 100%;
+  height: 65px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar > span {
+  cursor: pointer;
+  padding: 8px 35px;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+
+.active {
+  background-color: #b5b5b59c;
+}
+
+.megaMenu {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-top: 1px solid #b5b5b59c;
+}
+
+.subMenu {
+  background-color: #fafafa;
+  padding: 0 5px;
+  border-right: 1px solid #b5b5b59c;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.subMenu > .menuItem {
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+.variations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 5px 5px 0;
+  border-right: 1px solid #b5b5b59c;
+}
+
+.variations > .menuItem {
+  background-color: #fafafa;
+  display: flex;
+  column-gap: 15px;
+}
+
+.variationImg {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.variations > .menuItem > span {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotItems {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 5px 0;
+}
+
+.spotItems > .menuItem {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  column-gap: 15px;
+}
+
+.soptItemImg {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.spotItems > .menuItem > span {
+  width: 90px;
+  height: 70px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotItems > .menuItem:nth-child(2),
+.spotItems > .menuItem:nth-child(3),
+.spotItems > .menuItem:nth-child(4) {
+  flex: 1;
+}
+
+.spotItems > .menuItem:nth-child(1) {
+  background-color: transparent;
+}
+
+.spotItems > .menuItem:nth-child(5) > {
+  margin-left: auto;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.spotLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
